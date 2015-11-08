@@ -4,6 +4,10 @@
   border-radius: $raio;
 }
 
+@function multiplica-pela-fonte($multiplicador){
+	@return round($multiplicador * $font-default);
+}
+
 %image-replacement{
   text-indent: -9999px;
   overflow: hidden;
@@ -14,3 +18,9 @@
 	-webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   	box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
 }
+
+
+
+////////////////////////
+
+@import "compass/css3"; 
